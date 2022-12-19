@@ -1,0 +1,287 @@
+
+.logo{
+    height: 108px;
+    width: 108px;
+}
+nav {
+    font-family: "Cookie";
+    font-weight: 300;
+    font-size: 25px;
+    justify-content: space-between;
+}
+#header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+}
+nav ul a{
+    color: #fff;
+    text-decoration-line: none;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+nav ul a:hover {
+    color: #fe7b00;
+}
+nav ul li {
+    display: inline-block;
+    align-items: center;
+    color: white;
+}
+
+nav ul i{
+    color: #fff;
+}
+
+nav button{
+    background: transparent;
+    border: none;
+    font-size: 40px;
+}
+nav button i{
+    font-size: 30px;
+}
+#searchbar {
+    background-color: transparent;
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    color: white;
+    font-family: "Cookie";
+    font-size: 25px;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+.mngf{
+    border:3px solid #fe7b00;
+    border-radius: 20px;
+    font-family: "Cookie";
+    font-size: 20px;
+    cursor: pointer;
+}
+.mngf:hover {
+    background-color: #bd5f07;
+}
+body {
+    padding: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+body h2{
+    font-size: 80px;
+    color: #fe7b00;
+    font-family: "Cookie";
+    text-shadow: 3px 2px #c49e7ba7;
+}
+i{
+    cursor: pointer;
+    align-items: center;
+}
+i:hover{
+    color: #fe7b00;
+}
+.wrapper{
+    margin: 50px;
+    display: grid;
+    grid-gap: 25px;
+    align-items: center;
+    font-family: "Cookie";
+    font-size: 30px;
+    grid-template-columns: repeat(auto-fill ,256px);
+}
+.wrapper li{
+    background: black;
+    list-style: none;
+    height: 250px;
+    border-radius: 30px;
+    padding: 15px 20px 20px;
+    transition: box-shadow .2s;
+    border: 1px solid #fe7b00;
+    font-size-adjust: auto;
+    
+}
+
+.wrapper li:hover{
+    box-shadow: 0 0 20px #fe7b00;
+}
+
+.add-box, .icon , .bottom-content ,.popup , #headerp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-box{
+    flex-direction:column;
+    justify-content: center;
+}
+.add-box .icon{
+    height: 60px;
+    color: #fe7b00;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    justify-content: center;
+}
+.add-box .icon:hover {
+    background-color: rgba(250, 117, 0, 0.468);
+}
+.details p{
+    font-size: 30px;
+    color: #fe7b00;
+}
+.details span{
+    font-size: 25px;
+}
+.bottom-content{
+    font-size: 17px;
+    color: dimgrey;
+}
+.settings{
+    font-size: 20px;
+    cursor: pointer;
+}
+.note span{
+    display: block;
+}
+.note .bottom-content{
+    padding-top: 10px;
+    border-top: 1px solid #fe7b00;
+}
+.note .details{
+    max-height: 170px;
+    overflow-y: auto;
+}
+.settings i:hover{
+    color: #fe7b00;
+}
+.settings .menu{
+    position: absolute;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+.settings.show .menu {
+    transform: scale(1);
+}
+.settings li{
+    height: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 15px 15px;
+    justify-content: flex-start;
+    background: #000;
+    width: 45px;
+    list-style: none;
+    border: 1px solid #fe7b00;
+    box-shadow: none;
+}
+
+.settings li:hover{
+    background: #864101d1;
+    box-shadow: none;
+}
+.popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(240, 248, 255, 0.272);
+}
+.popup-box .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    max-width: 400px;
+    width: 100%;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+.popup-box , .popup-box .popup {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+.popup-box.show , .popup-box.show .popup {
+    opacity: 1;
+    pointer-events: auto;
+}
+.popup .content {
+    width: calc(100% - 15px);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: "Cookie";
+}
+
+.popup .content #headerp {
+    padding: 15px 25px;
+    border-bottom: 2px solid #ccc;
+}
+.content #headerp p{
+    font-size: 27px;
+    font-weight: 500;
+
+}
+.content #headerp i{
+    color: #8b8989;
+    font-size: 23px;
+}
+.content form {
+    margin: 15px 25px 35px;
+}
+.content form .row {
+    margin-bottom: 20px;
+}
+form .row label {
+    display: block;
+    font-size: 23px;
+    margin-bottom: 6px;
+}
+.content form :where(input , textarea) {
+    width: calc(100% - 25px);
+    height: 50px;
+    background-color: black;
+    outline: none;
+    font-family: "Cookie";
+    font-size: 20px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #fe7b00;
+    color: #fff;
+}
+
+.content form textarea {
+    height: 150px;
+    resize: none;
+    padding: 10px 15px;
+}
+.content form button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Cookie";
+    font-size: 23px;
+    border-radius: 5px ;
+    background: #fe7b00;
+}
+
+.content form button:hover {
+    background-color: #d56802;
+}
+.content #headerp i:hover {
+    color: #fe0000;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" countent="width = device-width initial-scale = 1.0">
+    <meta property="og:url" content="https:Anu-notes/home.html">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--giving title-->
+    <title>Manage Folders</title>
+    <!--icon on the titlebar-->
+    <link rel="icon" href="icons/snotes1.png">
+    <!--linking the google fonts-->
+    <!--link taken from https://fonts.google.com/specimen/Great+Vibes--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!--linking my css file-->
+    <link rel="stylesheet" href="main.css">
+    <!-- adding the link for fontawesome icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <!--adding the script for fontawesome icons-->
+    <script src="https://kit.fontawesome.com/1fa3530753.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="all" class="all">
+    <div class="popup-box">
+        <div class="popup">
+            <div class="content">
+                <header class="headerp" id="headerp">
+                    <p>Add a new Note</p>
+                    <i class="fa-solid fa-xmark"></i>
+                </header>
+                <form action="#">
+                    <div class="row title">
+                        <label>Title</label>
+                        <input type="text">
+                    </div>         
+                    <div class="row description">
+                        <label>Description</label>
+                        <textarea></textarea>
+                    </div>
+                    <button>Add Note</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <header id="header">
+            <img class="logo" src="icons/snotes1.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">All notes</a></li>
+                    <li><a href="home.html">Trash</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchbar" class="searchbar"></li>
+                    
+                    <li><a href="" id="minimenu"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                    <button><i class="fa-solid fa-sun" id="toggleDark"></i></button>
+                </ul>
+            </nav>
+        <a class="mngfl" href="managefol.html" target="_blank"><button class="mngf">Manage Folders</button></a>
+    </header>
+    <h2 align="center">All Notes</h2>
+    <div class="wrapper">
+        <li class="add-box">
+            <div class="icon"><i class="fa-solid fa-pen-to-square"></i></div>
+            <p>Add a new Note</p>
+        </li>
+    </div>
+<!--linking my JS file-->
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
